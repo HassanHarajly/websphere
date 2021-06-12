@@ -1,0 +1,11 @@
+<server>
+    <!-- Enable features -->
+    <featureManager>
+        <feature>jsp-2.3</feature>
+    </featureManager>
+    <!-- To access this server from a remote client add a host attribute to the
+         httpEndpoint element, e.g. host="*" -->
+    <httpEndpoint httpPort="9080" httpsPort="9443" id="defaultHttpEndpoint"/>
+
+    <application name="<your application name>" location="${appLocation}" type="war"/>
+</server>
